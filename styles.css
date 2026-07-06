@@ -1,251 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Artune | Learn. Lead. Transform.</title>
-    <meta
-      name="description"
-      content="Artune is an interdisciplinary learning portal for awareness, human systems, mindfulness, psychology, neuroscience, leadership, and group dynamics."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Artune home">
-        <img src="assets/artune-symbol.png" alt="" />
-        <span>Artune</span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#explore">Explore</a>
-        <a href="#courses">Courses</a>
-        <a href="#practice">Practice</a>
-        <a href="#journal">Journal</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="#courses">Explore the Course</a>
-    </header>
+# Artune GitHub Pages Site
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="kicker">Learn. Lead. Transform.</p>
-          <h1>Wake up to how human systems really work.</h1>
-          <p>
-            Artune helps people cultivate awareness by integrating psychology,
-            neuroscience, systems theory, systems psychodynamics, mindfulness practice,
-            and leadership development.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#courses">Explore the Course</a>
-            <a class="button secondary" href="#explore">Explore the Ideas</a>
-          </div>
-        </div>
-        <div class="hero-logo">
-          <img src="assets/artune-stylized.png" alt="Artune. Learn. Lead. Transform." />
-        </div>
-      </section>
+This is the GitHub-ready version of the Artune website.
 
-      <section class="philosophy section-band">
-        <div class="section-label">Core Philosophy</div>
-        <div>
-          <h2>Awareness creates choice.</h2>
-          <p>
-            Every moment, we are making meaning. We interpret what we see, fill in
-            what we do not, and respond through patterns shaped by our biology,
-            psychology, relationships, culture, and systems.
-          </p>
-          <p>
-            Artune exists to help people notice those patterns more clearly, so they
-            can respond with greater awareness, intention, and effectiveness.
-          </p>
-        </div>
-      </section>
+## Files to upload to GitHub
 
-      <section id="explore" class="section">
-        <div class="section-heading">
-          <p class="kicker">Explore</p>
-          <h2>The lenses that shape awareness.</h2>
-          <p>
-            Artune brings together multiple disciplines to help people understand
-            themselves, others, groups, organizations, and the systems that shape
-            human experience.
-          </p>
-        </div>
-        <div class="domain-grid">
-          <article>
-            <h3>Mindfulness & Awareness</h3>
-            <p>Develop attention, presence, and the capacity to respond rather than react.</p>
-          </article>
-          <article>
-            <h3>Psychology</h3>
-            <p>Explore the inner patterns that shape perception, emotion, identity, and behavior.</p>
-          </article>
-          <article>
-            <h3>Neuroscience</h3>
-            <p>Understand the brain and nervous system as foundations for learning and change.</p>
-          </article>
-          <article>
-            <h3>Human Systems</h3>
-            <p>See individuals, groups, and organizations as interconnected living systems.</p>
-          </article>
-          <article>
-            <h3>Group Dynamics</h3>
-            <p>Notice participation, authority, role, anxiety, conflict, and belonging in groups.</p>
-          </article>
-          <article>
-            <h3>Leadership & Organizations</h3>
-            <p>Lead with greater awareness in complex human systems and changing cultures.</p>
-          </article>
-          <article>
-            <h3>Learning & Development</h3>
-            <p>Understand how people grow, change, reflect, and make meaning over time.</p>
-          </article>
-        </div>
-      </section>
+Upload everything in this folder to your repository:
 
-      <section id="courses" class="section course-section">
-        <div class="section-heading">
-          <p class="kicker">Featured Course</p>
-          <h2>Group Dynamics for Facilitators</h2>
-          <p>
-            A systems-informed approach to noticing, making sense of, and responding
-            to what emerges in groups.
-          </p>
-        </div>
-        <div class="course-layout">
-          <div class="course-card">
-            <span class="tag">First course in the Artune ecosystem</span>
-            <h3>Learn to read groups in real time.</h3>
-            <p>
-              Designed for facilitators, educators, consultants, coaches, and leaders
-              who work with groups where influence matters more than formal authority.
-            </p>
-            <a class="button primary" href="https://ara-haroutiounian-4270.freshlearn.com/member/#/login">Member Portal</a>
-          </div>
-          <div class="module-list" aria-label="Course modules">
-            <span>Human Systems</span>
-            <span>Uncertainty & Anxiety in Groups</span>
-            <span>BART: Task, Authority, Role, and Boundaries</span>
-            <span>Use of Self</span>
-            <span>Sensemaking in the Moment</span>
-            <span>Intervention: Awareness in Action</span>
-            <span>Identity, Difference, and Facilitation</span>
-            <span>Designing Conditions for Learning</span>
-            <span>Refining the Lens</span>
-          </div>
-        </div>
-      </section>
+```txt
+index.html
+styles.css
+assets/
+.nojekyll
+CNAME
+README.md
+```
 
-      <section id="practice" class="section practice">
-        <div class="section-heading">
-          <p class="kicker">Practice</p>
-          <h2>Practice awareness.</h2>
-          <p>
-            Awareness is not only conceptual. It is developed through attention,
-            reflection, mindfulness, and repeated practice.
-          </p>
-        </div>
-        <div class="practice-grid">
-          <article>
-            <h3>Guided Meditations</h3>
-            <p>MBSR-informed practices for attention, regulation, and presence.</p>
-          </article>
-          <article>
-            <h3>Reflection Prompts</h3>
-            <p>Questions that support meaning-making, inquiry, and deeper seeing.</p>
-          </article>
-          <article>
-            <h3>Facilitation Exercises</h3>
-            <p>Applied practices for groups, teams, classrooms, and communities.</p>
-          </article>
-        </div>
-      </section>
+## Publish with GitHub Pages
 
-      <section id="journal" class="section journal">
-        <div class="section-heading">
-          <p class="kicker">Journal</p>
-          <h2>Reflections for a growing learning ecosystem.</h2>
-          <p>
-            Future articles will explore mindfulness, systems thinking, group
-            dynamics, neuroscience, leadership, learning, and organizational life.
-          </p>
-        </div>
-        <div class="journal-card">
-          <span class="tag">Coming soon</span>
-          <h3>What does it mean to develop a lens?</h3>
-          <p>
-            A short reflection on awareness, observation, and the practice of noticing
-            patterns as they emerge.
-          </p>
-        </div>
-      </section>
+1. Create a GitHub repository, for example `artune-site`.
+2. Upload these files to the repository root.
+3. Go to `Settings` > `Pages`.
+4. Under `Build and deployment`, choose:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/root`
+5. Save.
 
-      <section id="about" class="section about">
-        <div class="about-logo">
-          <img src="assets/artune-symbol.png" alt="Artune symbol" />
-        </div>
-        <div>
-          <p class="kicker">About Artune</p>
-          <h2>Artune means awake.</h2>
-          <p>
-            The name reflects a lifelong practice of learning to see more clearly:
-            ourselves, one another, and the systems we participate in.
-          </p>
-          <p>
-            Ara's work brings together education, facilitation, mindfulness practice,
-            systems psychodynamics, organizational development, group relations,
-            adult learning, and leadership development.
-          </p>
-        </div>
-      </section>
+GitHub will publish the site at a URL like:
 
-      <section id="contact" class="section contact">
-        <div>
-          <p class="kicker">Contact</p>
-          <h2>Stay connected.</h2>
-          <p>
-            Receive reflections, resources, and updates as the Artune learning
-            ecosystem grows.
-          </p>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" />
-          </label>
-          <label>
-            Reason for Inquiry
-            <select name="reason">
-              <option>Course question</option>
-              <option>Mindfulness / MBSR</option>
-              <option>Workshop inquiry</option>
-              <option>Organizational learning</option>
-              <option>Speaking / facilitation</option>
-              <option>General question</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4"></textarea>
-          </label>
-          <button class="button primary" type="submit">Send Inquiry</button>
-          <p class="form-note">Connect this form to GoDaddy forms, email marketing, or your preferred signup tool.</p>
-        </form>
-      </section>
-    </main>
+```txt
+https://your-username.github.io/artune-site/
+```
 
-    <footer class="site-footer">
-      <img src="assets/artune-symbol.png" alt="" />
-      <div>
-        <strong>Artune</strong>
-        <span>Learn. Lead. Transform.</span>
-      </div>
-    </footer>
-  </body>
-</html>
+## Use Artune.net
+
+This package includes a `CNAME` file set to:
+
+```txt
+artune.net
+```
+
+In GoDaddy DNS, point the domain to GitHub Pages using GitHub's custom-domain instructions. If you are not ready to connect the domain yet, you can remove the `CNAME` file before uploading.
+
+## Notes
+
+- The `Member Portal` button links to the FreshLearn login page.
+- The module order places `Sensemaking in the Moment` between `Use of Self` and `Intervention: Awareness in Action`.
+- This version does not include GoDaddy custom-code files.
