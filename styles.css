@@ -80,6 +80,16 @@ a {
   font-weight: 700;
 }
 
+.nav-links a,
+.text-link,
+.site-footer a,
+.contact a,
+.organization-section a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .nav-cta,
 .button {
   min-height: 44px;
@@ -104,6 +114,22 @@ a {
   background:
     radial-gradient(circle at 84% 16%, rgba(217, 154, 24, 0.16), transparent 28%),
     linear-gradient(135deg, var(--white), var(--paper));
+}
+
+.page-hero {
+  padding: clamp(80px, 10vw, 150px) clamp(20px, 6vw, 86px) clamp(52px, 7vw, 96px);
+  background:
+    radial-gradient(circle at 85% 18%, rgba(217, 154, 24, 0.15), transparent 30%),
+    linear-gradient(135deg, var(--white), var(--paper));
+}
+
+.page-hero h1 {
+  max-width: 980px;
+}
+
+.page-hero p {
+  max-width: 900px;
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
 }
 
 .hero-copy {
@@ -184,6 +210,13 @@ p {
   background: rgba(255, 255, 255, 0.55);
 }
 
+.text-link {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--deep-teal);
+  font-weight: 900;
+}
+
 .hero-logo {
   padding: clamp(18px, 3vw, 36px);
   border: 1px solid var(--line);
@@ -234,7 +267,8 @@ p {
 }
 
 .domain-grid,
-.practice-grid {
+.practice-grid,
+.lens-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -242,6 +276,7 @@ p {
 
 .domain-grid article,
 .practice-grid article,
+.lens-card,
 .course-card,
 .journal-card,
 .contact-form {
@@ -252,9 +287,49 @@ p {
 }
 
 .domain-grid article,
-.practice-grid article {
+.practice-grid article,
+.lens-card {
   min-height: 210px;
   padding: 24px;
+}
+
+.lens-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lens-card h2 {
+  font-size: clamp(1.35rem, 2.1vw, 2rem);
+  line-height: 1.1;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.pills a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 1px solid rgba(0, 98, 103, 0.22);
+  border-radius: 999px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--deep-teal);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.focus-pills {
+  max-width: 920px;
+}
+
+.compact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .domain-grid p,
@@ -320,6 +395,30 @@ p {
   background: var(--white);
 }
 
+.creator-profile {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.34fr) minmax(0, 0.9fr);
+  gap: clamp(28px, 6vw, 78px);
+  align-items: start;
+  background: var(--white);
+}
+
+.text-page {
+  max-width: 920px;
+}
+
+.text-page p {
+  font-size: 1.08rem;
+}
+
+.text-page h2 {
+  margin-bottom: 18px;
+}
+
+.organization-section {
+  background: var(--white);
+}
+
 .about-logo {
   justify-self: center;
   max-width: 300px;
@@ -333,6 +432,10 @@ p {
   grid-template-columns: minmax(0, 0.72fr) minmax(320px, 0.64fr);
   gap: clamp(30px, 6vw, 86px);
   background: var(--deep-teal);
+}
+
+.contact-page {
+  min-height: 72vh;
 }
 
 .contact h2,
@@ -407,6 +510,10 @@ textarea {
   gap: 2px;
 }
 
+.site-footer a {
+  color: rgba(255, 255, 255, 0.88);
+}
+
 @media (max-width: 980px) {
   .site-header {
     grid-template-columns: auto 1fr;
@@ -430,8 +537,13 @@ textarea {
 
   .domain-grid,
   .practice-grid,
+  .lens-grid,
   .module-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .creator-profile {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -468,6 +580,7 @@ textarea {
 
   .domain-grid,
   .practice-grid,
+  .lens-grid,
   .module-list {
     grid-template-columns: 1fr;
   }
