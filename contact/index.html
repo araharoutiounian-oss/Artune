@@ -33,6 +33,28 @@
       </section>
     </main>
     <footer class="site-footer"><img src="../assets/artune-symbol.png" alt="" /><div><strong>Artune</strong><span>Learn. Lead. Transform.</span><a href="mailto:admin@artune.net">admin@artune.net</a><span>&copy; 2026 Artune. All rights reserved.</span></div></footer>
-    <script src="../script.js"></script>
+    <script>
+      (() => {
+        if (window.artuneMenuReady) return;
+        window.artuneMenuReady = true;
+        const header = document.querySelector("[data-site-header]");
+        const toggle = header?.querySelector(".menu-toggle");
+        const nav = header?.querySelector("#primary-navigation");
+        const closeMenu = () => {
+          header?.classList.remove("is-menu-open");
+          document.body.classList.remove("is-menu-locked");
+          toggle?.setAttribute("aria-expanded", "false");
+        };
+        toggle?.addEventListener("click", () => {
+          const isOpen = header.classList.toggle("is-menu-open");
+          document.body.classList.toggle("is-menu-locked", isOpen);
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+        nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeMenu();
+        });
+      })();
+    </script>
   </body>
 </html>
