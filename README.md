@@ -30,6 +30,7 @@ Upload everything in this folder to the root of your GitHub repository:
 ```txt
 index.html
 styles.css
+script.js
 assets/
 explore/
 learning/
