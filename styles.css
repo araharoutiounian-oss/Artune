@@ -200,6 +200,13 @@ a {
   font-size: clamp(1.08rem, 1.5vw, 1.28rem);
 }
 
+.page-hero-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.45fr);
+  gap: clamp(30px, 6vw, 82px);
+  align-items: center;
+}
+
 .hero-copy {
   max-width: 760px;
 }
@@ -322,6 +329,119 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.78rem;
+}
+
+.philosophy-content,
+.about-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.42fr);
+  gap: clamp(28px, 5vw, 68px);
+  align-items: center;
+}
+
+.soft-visual {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 76% 24%, rgba(217, 154, 24, 0.22), transparent 24%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(251, 247, 239, 0.9));
+  box-shadow: var(--shadow);
+}
+
+.soft-visual::before,
+.soft-visual::after,
+.soft-visual span {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.soft-visual::before {
+  left: 50%;
+  bottom: 24%;
+  width: 84%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(0, 98, 103, 0.2);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.soft-visual::after {
+  left: 14%;
+  right: 14%;
+  bottom: 29%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(217, 154, 24, 0.76), transparent);
+}
+
+.soft-visual span {
+  left: 50%;
+  bottom: 28%;
+  width: 1px;
+  height: 42%;
+  background: linear-gradient(180deg, rgba(217, 154, 24, 0.64), transparent);
+  transform-origin: bottom center;
+}
+
+.soft-visual span:nth-child(1) {
+  transform: rotate(-42deg);
+}
+
+.soft-visual span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.soft-visual span:nth-child(3) {
+  transform: rotate(42deg);
+}
+
+.sunrise-visual {
+  border-color: rgba(255, 255, 255, 0.18);
+  background:
+    radial-gradient(circle at 52% 70%, rgba(255, 255, 255, 0.8), transparent 12%),
+    radial-gradient(circle at 52% 70%, rgba(217, 154, 24, 0.5), transparent 34%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.18), rgba(0, 98, 103, 0.36));
+  box-shadow: none;
+}
+
+.emergence-visual {
+  min-height: 360px;
+  align-self: stretch;
+  background:
+    radial-gradient(circle at 30% 72%, rgba(217, 154, 24, 0.32), transparent 22%),
+    radial-gradient(circle at 68% 34%, rgba(0, 98, 103, 0.2), transparent 26%),
+    linear-gradient(145deg, var(--white), #f8efe1);
+}
+
+.emergence-visual::before {
+  width: 74%;
+  bottom: 18%;
+  border-color: rgba(0, 98, 103, 0.24);
+  box-shadow:
+    0 0 0 34px rgba(0, 98, 103, 0.04),
+    0 0 0 68px rgba(217, 154, 24, 0.05);
+}
+
+.offering-visual {
+  min-height: 280px;
+  background:
+    radial-gradient(circle at 68% 24%, rgba(217, 154, 24, 0.3), transparent 20%),
+    radial-gradient(circle at 18% 76%, rgba(0, 98, 103, 0.16), transparent 28%),
+    linear-gradient(145deg, var(--white), #f7f0e5);
+}
+
+.contact-visual {
+  min-height: 220px;
+  margin-top: 30px;
+  border-color: rgba(255, 255, 255, 0.18);
+  background:
+    radial-gradient(circle at 50% 72%, rgba(255, 255, 255, 0.64), transparent 12%),
+    radial-gradient(circle at 50% 72%, rgba(217, 154, 24, 0.45), transparent 32%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(0, 98, 103, 0.42));
+  box-shadow: none;
 }
 
 .section-heading {
@@ -634,6 +754,7 @@ p {
 }
 
 .course-hero-card {
+  min-width: 0;
   max-width: 720px;
   padding: clamp(28px, 5vw, 52px);
   border: 1px solid rgba(0, 98, 103, 0.2);
@@ -662,6 +783,7 @@ p {
 }
 
 .course-hero-image {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -816,6 +938,7 @@ p {
   min-height: 72vh;
 }
 
+.contact h1,
 .contact h2,
 .contact p {
   color: var(--white);
@@ -943,6 +1066,9 @@ textarea {
 
   .hero,
   .section-band,
+  .page-hero-split,
+  .philosophy-content,
+  .about-page-layout,
   .course-layout,
   .course-hero-integrated,
   .about,
@@ -959,6 +1085,10 @@ textarea {
 
   .creator-profile {
     grid-template-columns: 1fr;
+  }
+
+  .soft-visual {
+    min-height: 220px;
   }
 }
 
@@ -1001,14 +1131,27 @@ textarea {
 
   .hero,
   .section,
-  .section-band {
+  .section-band,
+  .course-hero-integrated {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .course-hero-card h1 {
+    font-size: clamp(2.25rem, 13vw, 3rem);
+    overflow-wrap: anywhere;
   }
 
   .hero-actions,
   .button {
     width: 100%;
+  }
+
+  .soft-visual,
+  .emergence-visual,
+  .offering-visual,
+  .contact-visual {
+    min-height: 190px;
   }
 
   .domain-grid,
