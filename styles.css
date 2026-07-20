@@ -734,10 +734,19 @@ p {
   box-shadow: 0 16px 42px rgba(0, 73, 77, 0.06);
 }
 
-.service-card h3 {
-  margin-bottom: 12px;
+.service-title {
+  max-width: 760px;
+  margin-bottom: 14px;
   color: var(--deep-teal);
-  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
+  font-size: clamp(2.1rem, 3.8vw, 3.35rem);
+  line-height: 0.98;
+}
+
+.service-price {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  font-weight: 900;
 }
 
 .service-card .button {
