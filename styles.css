@@ -471,6 +471,21 @@ p {
   background: var(--white);
 }
 
+.creator-photo {
+  justify-self: center;
+  width: min(320px, 100%);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.creator-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .text-page {
   max-width: 920px;
 }
@@ -481,6 +496,46 @@ p {
 
 .text-page h2 {
   margin-bottom: 18px;
+}
+
+.course-offer {
+  margin-bottom: 34px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 42px rgba(0, 73, 77, 0.06);
+}
+
+.course-offer h2 {
+  margin-top: 22px;
+  font-size: clamp(1.35rem, 2.1vw, 2rem);
+}
+
+.feature-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  content: "";
 }
 
 .organization-section {
