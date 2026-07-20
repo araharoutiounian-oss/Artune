@@ -365,11 +365,190 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow: hidden;
 }
 
 .lens-card h2 {
   font-size: clamp(1.35rem, 2.1vw, 2rem);
   line-height: 1.1;
+}
+
+.lens-visual {
+  position: relative;
+  min-height: 154px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 98, 103, 0.16);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(217, 154, 24, 0.35), transparent 26%),
+    linear-gradient(135deg, rgba(0, 98, 103, 0.9), rgba(8, 47, 51, 0.96));
+}
+
+.lens-visual::before,
+.lens-visual::after,
+.lens-visual span {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.lens-visual::before {
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+}
+
+.lens-visual::after {
+  width: 54px;
+  height: 54px;
+  right: 22px;
+  bottom: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.lens-visual span {
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.lens-visual span:nth-child(1) {
+  width: 92px;
+  height: 3px;
+  left: 24px;
+  top: 42px;
+  transform: rotate(-12deg);
+}
+
+.lens-visual span:nth-child(2) {
+  width: 68px;
+  height: 3px;
+  left: 42px;
+  top: 74px;
+  transform: rotate(18deg);
+}
+
+.lens-visual span:nth-child(3) {
+  width: 84px;
+  height: 3px;
+  left: 26px;
+  bottom: 42px;
+  transform: rotate(7deg);
+}
+
+.lens-psychology {
+  background:
+    radial-gradient(circle at 30% 72%, rgba(217, 154, 24, 0.36), transparent 28%),
+    radial-gradient(circle at 74% 28%, rgba(255, 255, 255, 0.18), transparent 22%),
+    linear-gradient(135deg, #0b2447, #006267);
+}
+
+.lens-psychology::before {
+  border-radius: 42% 58% 48% 52%;
+}
+
+.lens-mindfulness {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.3), transparent 18%),
+    radial-gradient(circle at 50% 50%, rgba(217, 154, 24, 0.26), transparent 42%),
+    linear-gradient(135deg, #fbf7ef, #006267);
+}
+
+.lens-mindfulness::before,
+.lens-mindfulness::after {
+  left: 50%;
+  top: 50%;
+  width: 92px;
+  height: 92px;
+  transform: translate(-50%, -50%);
+  border-color: rgba(0, 73, 77, 0.32);
+  background: transparent;
+}
+
+.lens-neuroscience {
+  background:
+    radial-gradient(circle at 22% 34%, rgba(255, 255, 255, 0.28), transparent 16%),
+    radial-gradient(circle at 72% 66%, rgba(217, 154, 24, 0.36), transparent 22%),
+    linear-gradient(135deg, #00494d, #0b2447);
+}
+
+.lens-neuroscience span {
+  height: 2px;
+  transform-origin: left center;
+}
+
+.lens-systems {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #006267, #082f33);
+  background-size: 32px 32px, 32px 32px, auto;
+}
+
+.lens-systems::before {
+  border-radius: 8px;
+}
+
+.lens-groups {
+  background:
+    radial-gradient(circle at 26% 44%, rgba(255, 255, 255, 0.42), transparent 11%),
+    radial-gradient(circle at 50% 34%, rgba(217, 154, 24, 0.44), transparent 12%),
+    radial-gradient(circle at 72% 52%, rgba(255, 255, 255, 0.34), transparent 11%),
+    linear-gradient(135deg, #0b2447, #006267);
+}
+
+.lens-groups::before {
+  inset: 36px 28px;
+  border-radius: 8px;
+}
+
+.lens-psychodynamics {
+  background:
+    radial-gradient(circle at 24% 25%, rgba(255, 255, 255, 0.22), transparent 22%),
+    radial-gradient(circle at 76% 72%, rgba(217, 154, 24, 0.4), transparent 24%),
+    linear-gradient(135deg, #082f33, #0b2447);
+}
+
+.lens-psychodynamics::before {
+  inset: 24px 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(255, 255, 255, 0.06);
+}
+
+.lens-leadership {
+  background:
+    linear-gradient(155deg, rgba(217, 154, 24, 0.58) 0 28%, transparent 28% 100%),
+    linear-gradient(135deg, #006267, #0b2447);
+}
+
+.lens-leadership::before {
+  inset: auto 26px 24px 26px;
+  height: 86px;
+  border-radius: 8px 8px 40px 40px;
+}
+
+.lens-organization {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 12%, transparent 12% 18%, rgba(255, 255, 255, 0.2) 18% 30%, transparent 30%),
+    linear-gradient(135deg, #00494d, #d99a18);
+}
+
+.lens-organization::before {
+  inset: 32px 24px;
+  border-radius: 8px;
+}
+
+.lens-development {
+  background:
+    radial-gradient(circle at 30% 72%, rgba(255, 255, 255, 0.28), transparent 18%),
+    radial-gradient(circle at 56% 46%, rgba(255, 255, 255, 0.22), transparent 17%),
+    radial-gradient(circle at 74% 26%, rgba(217, 154, 24, 0.5), transparent 16%),
+    linear-gradient(135deg, #fbf7ef, #006267);
+}
+
+.lens-development::before {
+  inset: 30px 46px;
+  border-radius: 999px 999px 8px 8px;
+  border-color: rgba(0, 73, 77, 0.32);
 }
 
 .pills {
@@ -419,6 +598,66 @@ p {
 
 .course-card {
   padding: 28px;
+}
+
+.course-card-image {
+  width: 100%;
+  margin: 0 0 22px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.course-banner-section {
+  padding: clamp(28px, 5vw, 64px) clamp(20px, 6vw, 86px) 0;
+  background: var(--paper);
+}
+
+.course-banner-section img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.course-hero-fractal {
+  position: relative;
+  min-height: clamp(620px, 78vh, 860px);
+  display: grid;
+  align-items: center;
+  padding: clamp(76px, 10vw, 140px) clamp(20px, 6vw, 86px);
+  background:
+    linear-gradient(90deg, rgba(251, 247, 239, 0.96) 0%, rgba(251, 247, 239, 0.86) 36%, rgba(0, 73, 77, 0.18) 64%, rgba(8, 47, 51, 0.26) 100%),
+    url("assets/gdf-fractal-bg.webp") center right / cover no-repeat;
+}
+
+.course-hero-card {
+  max-width: 720px;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(0, 98, 103, 0.2);
+  border-radius: 8px;
+  background: rgba(251, 247, 239, 0.9);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.course-hero-card h1 {
+  margin: 0;
+  color: var(--deep-teal);
+  font-size: clamp(3rem, 6vw, 6.2rem);
+  line-height: 0.95;
+}
+
+.course-hero-card p {
+  max-width: 600px;
+  font-size: clamp(1.05rem, 1.5vw, 1.26rem);
+}
+
+.course-price {
+  color: var(--gold);
+  font-weight: 900;
 }
 
 .tag {
