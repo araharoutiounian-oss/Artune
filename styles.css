@@ -622,15 +622,15 @@ p {
   box-shadow: var(--shadow);
 }
 
-.course-hero-fractal {
-  position: relative;
-  min-height: clamp(620px, 78vh, 860px);
+.course-hero-integrated {
   display: grid;
+  grid-template-columns: minmax(320px, 0.72fr) minmax(420px, 1fr);
+  gap: clamp(24px, 4vw, 52px);
   align-items: center;
-  padding: clamp(76px, 10vw, 140px) clamp(20px, 6vw, 86px);
+  padding: clamp(76px, 10vw, 132px) clamp(20px, 6vw, 86px);
   background:
-    linear-gradient(90deg, rgba(251, 247, 239, 0.96) 0%, rgba(251, 247, 239, 0.86) 36%, rgba(0, 73, 77, 0.18) 64%, rgba(8, 47, 51, 0.26) 100%),
-    url("assets/gdf-fractal-bg.webp") center right / cover no-repeat;
+    radial-gradient(circle at 82% 26%, rgba(217, 154, 24, 0.16), transparent 32%),
+    linear-gradient(135deg, var(--white), var(--paper));
 }
 
 .course-hero-card {
@@ -640,14 +640,15 @@ p {
   border-radius: 8px;
   background: rgba(251, 247, 239, 0.9);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
 }
 
 .course-hero-card h1 {
   margin: 0;
   color: var(--deep-teal);
-  font-size: clamp(3rem, 6vw, 6.2rem);
+  font-size: clamp(3rem, 5vw, 4.9rem);
   line-height: 0.95;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .course-hero-card p {
@@ -658,6 +659,21 @@ p {
 .course-price {
   color: var(--gold);
   font-weight: 900;
+}
+
+.course-hero-image {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+
+.course-hero-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tag {
@@ -928,6 +944,7 @@ textarea {
   .hero,
   .section-band,
   .course-layout,
+  .course-hero-integrated,
   .about,
   .contact {
     grid-template-columns: 1fr;
