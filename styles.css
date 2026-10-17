@@ -784,6 +784,44 @@ p {
   background: rgba(255, 255, 255, 0.86);
 }
 
+.creator-profile-shakeh {
+  border-top: 1px solid var(--line);
+  background: #eef5f2;
+}
+
+.creator-photo-shakeh img {
+  aspect-ratio: 5 / 4;
+  object-position: center;
+}
+
+.creator-roles {
+  color: var(--deep-teal);
+  font-weight: 600;
+}
+
+.shakeh-offerings {
+  margin-top: 42px;
+}
+
+.shakeh-offerings-title {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.shakeh-offerings .service-grid {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 24px;
+}
+
+.shakeh-offerings .service-title {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+.shakeh-connect {
+  margin-top: 28px;
+}
+
 .course-layout {
   display: grid;
   grid-template-columns: minmax(280px, 0.58fr) minmax(0, 0.9fr);
