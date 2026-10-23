@@ -6,7 +6,6 @@ This is the GitHub-ready version of the Artune website.
 
 ```txt
 /
-/explore/
 /learning/
 /learning/group-dynamics-for-facilitators/
 /creators/
@@ -17,6 +16,7 @@ This is the GitHub-ready version of the Artune website.
 The retired paths below redirect into the new structure:
 
 ```txt
+/explore/ -> /
 /courses/ -> /learning/
 /courses/group-dynamics-for-facilitators/ -> /learning/group-dynamics-for-facilitators/
 /practice/ -> /learning/

@@ -1002,6 +1002,75 @@ p {
   font-size: clamp(1.35rem, 2.1vw, 2rem);
 }
 
+.about-page-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  align-self: center;
+}
+
+.course-enrollment-options {
+  margin: 40px 0;
+}
+
+.course-enrollment-options > h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.enrollment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.enrollment-option {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.enrollment-option h3 {
+  font-size: 1.5rem;
+}
+
+.enrollment-option .enrollment-price {
+  margin: 16px 0 0;
+  color: var(--deep-teal);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.enrollment-option .button {
+  margin-top: auto;
+}
+
+.course-enroll-actions .button,
+.enrollment-option .button,
+.offering-enrollment-links .button {
+  max-width: 100%;
+  padding: 12px 18px;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.offering-enrollment-links {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 620px) {
+  .enrollment-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .course-video-section {
   margin: 34px 0;
   padding: clamp(22px, 4vw, 34px);
