@@ -715,6 +715,14 @@ p {
     linear-gradient(145deg, var(--white), var(--paper));
 }
 
+.initial-consultation-button {
+  max-width: 100%;
+  padding: 12px 22px;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
