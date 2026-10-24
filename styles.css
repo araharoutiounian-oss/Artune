@@ -207,6 +207,28 @@ a {
   align-items: center;
 }
 
+.fractal-panel {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.fractal-panel-learning {
+  aspect-ratio: 4 / 3;
+  object-position: 65% center;
+}
+
+.fractal-panel-contact {
+  margin-top: 30px;
+  aspect-ratio: 2 / 1;
+  object-position: center;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
 .hero-copy {
   max-width: 760px;
 }
