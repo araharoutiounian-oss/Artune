@@ -1043,6 +1043,35 @@ p {
   margin: 40px 0;
 }
 
+.course-curriculum {
+  margin: 40px 0;
+}
+
+.course-curriculum h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.curriculum-list article {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.curriculum-list h3 {
+  color: var(--deep-teal);
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.curriculum-list .module-question {
+  margin: 16px 0 10px;
+  color: var(--navy);
+}
+
+.curriculum-list article > p:last-child {
+  margin-bottom: 0;
+}
+
 .course-enrollment-options > h2 {
   font-size: 2rem;
   line-height: 1.15;
