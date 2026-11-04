@@ -1047,6 +1047,131 @@ p {
   margin: 0;
 }
 
+.course-discovery-heading {
+  padding: 48px clamp(20px, 6vw, 86px) 24px;
+  background: var(--white);
+}
+
+.course-discovery-heading h1 {
+  max-width: 1100px;
+  font-size: 3.25rem;
+  line-height: 1.08;
+}
+
+.course-discovery-heading p {
+  max-width: 760px;
+  margin: 18px 0 0;
+  font-size: 1.1rem;
+}
+
+.course-curriculum-visual {
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+.course-curriculum-visual .section-heading {
+  margin-bottom: 24px;
+}
+
+.course-curriculum-visual .curriculum-list article {
+  padding: 0;
+  overflow: hidden;
+}
+
+.module-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: #e7eeeb;
+  object-position: center;
+}
+
+.module-image-cover {
+  object-fit: cover;
+}
+
+.module-image-contain {
+  object-fit: contain;
+}
+
+.module-card-copy {
+  padding: 22px;
+}
+
+.module-number {
+  margin: 0 0 10px;
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.module-card-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.identity-description {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.identity-description summary,
+.course-image-credits summary {
+  color: var(--deep-teal);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.course-introduction {
+  margin-bottom: 44px;
+}
+
+.course-introduction h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.course-image-credits {
+  padding: 28px clamp(20px, 6vw, 86px);
+  border-top: 1px solid var(--line);
+  background: var(--white);
+}
+
+.course-image-credits ol {
+  max-width: 1000px;
+  color: var(--muted);
+  line-height: 1.65;
+  padding-left: 24px;
+}
+
+.course-image-credits li {
+  margin: 14px 0;
+}
+
+.course-image-credits a {
+  color: var(--deep-teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .course-discovery-heading {
+    padding: 32px 18px 20px;
+  }
+
+  .course-discovery-heading h1 {
+    font-size: 2.25rem;
+  }
+
+  .course-curriculum-visual {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
 .course-curriculum h2 {
   font-size: 2rem;
   line-height: 1.15;
