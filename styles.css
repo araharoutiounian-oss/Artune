@@ -1082,17 +1082,7 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
-  background: #e7eeeb;
-  object-position: center;
-}
-
-.module-image-cover {
-  object-fit: cover;
-}
-
-.module-image-contain {
-  object-fit: contain;
+  aspect-ratio: auto;
 }
 
 .module-card-copy {
