@@ -929,15 +929,26 @@ p {
 }
 
 .course-opening-banner {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background: var(--white);
 }
 
 .course-opening-banner img {
-  max-width: 1200px;
+  max-width: 640px;
   height: auto;
   margin-inline: auto;
+  box-shadow: none;
+}
+
+@media (max-width: 620px) {
+  .course-opening-banner {
+    padding: 16px 18px;
+  }
+
+  .course-opening-banner img {
+    max-width: 280px;
+  }
 }
 
 .course-hero-integrated {
