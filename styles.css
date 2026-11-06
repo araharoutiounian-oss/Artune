@@ -873,6 +873,49 @@ p {
   object-position: center;
 }
 
+.course-learn-more {
+  width: 100%;
+  min-height: 60px;
+  padding: 14px 24px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.course-preview {
+  max-width: 1040px;
+}
+
+.course-preview-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.service-actions {
+  display: grid;
+  gap: 14px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.service-actions .consultation-invitation {
+  margin: 0;
+  color: var(--deep-teal);
+  font-weight: 700;
+}
+
+.service-card .service-actions .button {
+  max-width: 100%;
+  margin-top: 0;
+  padding: 12px 18px;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .course-banner-section {
   padding: clamp(28px, 5vw, 64px) clamp(20px, 6vw, 86px) 0;
   background: var(--paper);
@@ -883,6 +926,18 @@ p {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.course-opening-banner {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--white);
+}
+
+.course-opening-banner img {
+  max-width: 1200px;
+  height: auto;
+  margin-inline: auto;
 }
 
 .course-hero-integrated {
