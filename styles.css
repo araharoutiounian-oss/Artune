@@ -1190,7 +1190,8 @@ p {
   margin-bottom: 0;
 }
 
-.identity-description {
+.identity-description,
+.module-image-explanation {
   margin-top: 18px;
   color: var(--muted);
   font-size: 0.95rem;
@@ -1198,10 +1199,19 @@ p {
 }
 
 .identity-description summary,
+.module-image-explanation summary,
 .course-image-credits summary {
   color: var(--deep-teal);
   font-weight: 700;
   cursor: pointer;
+}
+
+.module-image-explanation p {
+  margin-bottom: 0;
+}
+
+.module-image-explanation summary {
+  padding-block: 8px;
 }
 
 .course-introduction {
