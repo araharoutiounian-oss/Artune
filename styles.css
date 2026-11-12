@@ -941,6 +941,112 @@ p {
   box-shadow: none;
 }
 
+.course-testimonial {
+  padding: 36px clamp(20px, 6vw, 86px) 40px;
+  border-top: 1px solid var(--line);
+  background: #f0f5f3;
+}
+
+.course-testimonial-inner {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.testimonial-entry {
+  min-width: 0;
+}
+
+.testimonial-entry-rose {
+  border-left: 1px solid var(--line);
+  padding-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .testimonial-entry-rose {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 28px;
+  }
+}
+
+.course-testimonial .kicker {
+  color: var(--teal);
+  line-height: 1.5;
+}
+
+.testimonial-quote {
+  margin: 0;
+}
+
+.testimonial-quote blockquote,
+.testimonial-details blockquote {
+  margin: 0;
+}
+
+.testimonial-quote blockquote p {
+  margin: 0;
+  color: var(--deep-teal);
+  font-size: 1.45rem;
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+.testimonial-quote figcaption {
+  display: grid;
+  gap: 5px;
+  margin-top: 24px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.testimonial-quote figcaption strong {
+  color: var(--deep-teal);
+  font-size: 1.1rem;
+}
+
+.testimonial-quote figcaption span {
+  color: var(--muted);
+}
+
+.testimonial-details {
+  margin-top: 18px;
+}
+
+.testimonial-details summary {
+  width: fit-content;
+  max-width: 100%;
+  padding-block: 10px;
+  color: var(--deep-teal);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.testimonial-details blockquote {
+  padding-top: 8px;
+}
+
+@media (max-width: 620px) {
+  .course-testimonial {
+    padding: 28px 18px;
+  }
+
+  .testimonial-quote blockquote p {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 620px) {
   .course-opening-banner {
     padding: 16px 18px;
