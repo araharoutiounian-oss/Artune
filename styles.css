@@ -1144,11 +1144,34 @@ p {
   overflow: hidden;
 }
 
-.module-image {
+.module-image-frame {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e7eeeb;
+}
+
+.module-image-frame-tall {
+  aspect-ratio: 1 / 1;
+}
+
+.module-image-frame .module-image {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.module-image-frame .module-image-full {
+  object-fit: contain;
+}
+
+.module-image-frame .module-image-guitar {
+  object-position: 50% 30%;
+}
+
+.module-image-frame .module-image-ripples {
+  object-position: 65% 50%;
 }
 
 .module-card-copy {
