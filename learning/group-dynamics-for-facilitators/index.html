@@ -6,13 +6,23 @@
     <title>Group Dynamics for Facilitators | Artune</title>
     <meta name="description" content="Learn to notice, make sense of, and respond to what emerges in groups." />
     <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../navigation.css" />
+    <link rel="stylesheet" href="../../course-introduction.css" />
     <script defer src="../../analytics.js"></script>
+    <script defer src="../../navigation.js"></script>
   </head>
   <body>
     <header class="site-header" data-site-header>
       <a class="brand" href="/" aria-label="Artune home"><img src="../../assets/artune-symbol.png" alt="" /><span>Artune</span></a>
       <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
-        <a href="/">Home</a><a href="/learning/">Offerings</a><a href="/creators/">Creators</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+        <a href="/">Home</a><details class="offerings-menu">
+          <summary>Offerings</summary>
+          <div class="offerings-submenu">
+            <a href="/learning/">Personal &amp; Professional Development</a>
+            <a href="/consulting/">Consulting &amp; Coaching</a>
+            <a href="/events/">Events</a>
+          </div>
+        </details><a href="/creators/">Creators</a><a href="/about/">About</a><a href="/contact/">Contact</a>
       </nav>
       <a class="nav-cta" href="https://Artune.freshlearn.com/member">Member Portal</a>
       <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false"><span class="menu-toggle-lines" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
@@ -21,6 +31,71 @@
       <section class="course-banner-section course-opening-banner" aria-labelledby="course-title">
         <h1 class="sr-only" id="course-title">Group Dynamics for Facilitators</h1>
         <img src="../../assets/gdf-banner.png" width="1672" height="941" alt="Group Dynamics for Facilitators. Learn to notice, make sense of, and respond to what emerges in groups. A systems-informed approach to facilitating with greater awareness, intention, and effectiveness." />
+      </section>
+      <section class="course-introduction" aria-labelledby="course-introduction-title">
+        <div class="course-introduction-inner">
+          <div class="course-introduction-heading">
+            <h2 id="course-introduction-title">Take Your Work with Groups to a New Level</h2>
+            <p class="course-introduction-subtitle">A distinctive Applied Human Systems perspective for professionals whose work depends on people.</p>
+            <p><strong>You already have the expertise. Now develop a new way of seeing and working with people.</strong></p>
+            <p>Grounded in <strong>Applied Human Systems</strong>, <em>Group Dynamics for Facilitators</em> offers a perspective you won't find in conventional facilitation training. Learn to recognize the often unseen dynamics shaping group behavior, make sense of what's emerging, and respond with greater awareness, intention, and effectiveness.</p>
+          </div>
+
+          <h3 class="course-audience-title">What Will You Be Able to Do Differently?</h3>
+          <div class="course-audience-grid">
+            <details class="course-audience-card">
+              <summary>
+                <span class="course-audience-role">Facilitators</span>
+                <strong>Go Beyond Managing the Process</strong>
+                <span class="course-audience-chevron" aria-hidden="true"></span>
+              </summary>
+              <p>Recognize what's happening beneath the surface of participation, resistance, conflict, and silence. Make interventions informed by the dynamics of the group, not just the agenda.</p>
+            </details>
+            <details class="course-audience-card">
+              <summary>
+                <span class="course-audience-role">Team Coaches</span>
+                <strong>See the Patterns Keeping Teams Stuck</strong>
+                <span class="course-audience-chevron" aria-hidden="true"></span>
+              </summary>
+              <p>Identify how informal roles, authority, anxiety, and shared assumptions shape team behavior. Help teams examine patterns that individual coaching alone may not reveal.</p>
+            </details>
+            <details class="course-audience-card">
+              <summary>
+                <span class="course-audience-role">Consultants</span>
+                <strong>Look Beyond the Presenting Problem</strong>
+                <span class="course-audience-chevron" aria-hidden="true"></span>
+              </summary>
+              <p>Recognize the systemic dynamics behind organizational challenges. Ask different questions, uncover competing expectations, and develop more informed approaches to change and collaboration.</p>
+            </details>
+            <details class="course-audience-card">
+              <summary>
+                <span class="course-audience-role">Teachers</span>
+                <strong>See the Classroom as a Group</strong>
+                <span class="course-audience-chevron" aria-hidden="true"></span>
+              </summary>
+              <p>Recognize how informal roles, authority, identity, and group dynamics influence student participation and learning. Respond to classroom challenges with a wider perspective than individual behavior alone.</p>
+            </details>
+            <details class="course-audience-card">
+              <summary>
+                <span class="course-audience-role">Trainers</span>
+                <strong>Work with the Learning Group</strong>
+                <span class="course-audience-chevron" aria-hidden="true"></span>
+              </summary>
+              <p>Recognize how group dynamics influence engagement, resistance, and learning. Design experiences more intentionally and respond to what emerges rather than relying exclusively on prepared activities.</p>
+            </details>
+          </div>
+
+          <div class="course-capability">
+            <h3>More Than New Techniques. A New Professional Capability.</h3>
+            <ul class="course-capability-sequence" aria-label="Three connected capacities">
+              <li>Notice</li>
+              <li>Make Sense</li>
+              <li>Respond</li>
+            </ul>
+            <p><strong>Notice more. Make sense of what emerges. Respond with greater intention.</strong></p>
+            <p>Learn to connect your own internal experience with what you're observing in others and the larger system&mdash;developing a more sophisticated, authentic, and effective way of working with groups.</p>
+          </div>
+        </div>
       </section>
       <section class="course-testimonial" aria-labelledby="testimonial-heading">
         <div class="course-testimonial-inner">
@@ -232,15 +307,6 @@
         </div>
       </section>
       <section class="section text-page">
-        <div class="course-introduction">
-          <h2>Every group is more than the people in it.</h2>
-        <p>Beneath every agenda, discussion, and decision are patterns of participation, uncertainty, relationships, roles, assumptions, and emotions that shape how a group thinks, learns, and works together.</p>
-        <p>These dynamics are often difficult to see while we are participating in them. Yet they influence nearly every aspect of group life, from collaboration and creativity to conflict, learning, and decision-making.</p>
-        <p>This course is designed to help facilitators develop the capacity to notice what is emerging in groups, make sense of those patterns, and respond with greater awareness and intention.</p>
-        <p>Rather than offering formulas or techniques to apply in every situation, the course develops a way of seeing, one that integrates systems theory, systems psychodynamics, psychology, adult learning, and reflective practice.</p>
-        <p>Whether you facilitate classrooms, teams, workshops, community groups, or organizational meetings, the goal is not to become more controlling or more certain. It is to become more observant, more thoughtful, and more responsive to the group you are working with.</p>
-        <p>Over time, this lens becomes something you carry into every group you facilitate.</p>
-        </div>
         <div class="course-offer">
           <p class="kicker">Group Dynamics for Facilitators</p>
           <p>
@@ -322,28 +388,5 @@
       </section>
     </main>
     <footer class="site-footer"><img src="../../assets/artune-symbol.png" alt="" /><div><strong>Artune</strong><span>Learn. Lead. Transform.</span><a href="mailto:admin@artune.net">admin@artune.net</a><span>&copy; 2026 Artune. All rights reserved.</span></div></footer>
-    <script>
-      (() => {
-        if (window.artuneMenuReady) return;
-        window.artuneMenuReady = true;
-        const header = document.querySelector("[data-site-header]");
-        const toggle = header?.querySelector(".menu-toggle");
-        const nav = header?.querySelector("#primary-navigation");
-        const closeMenu = () => {
-          header?.classList.remove("is-menu-open");
-          document.body.classList.remove("is-menu-locked");
-          toggle?.setAttribute("aria-expanded", "false");
-        };
-        toggle?.addEventListener("click", () => {
-          const isOpen = header.classList.toggle("is-menu-open");
-          document.body.classList.toggle("is-menu-locked", isOpen);
-          toggle.setAttribute("aria-expanded", String(isOpen));
-        });
-        nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") closeMenu();
-        });
-      })();
-    </script>
-  </body>
+</body>
 </html>

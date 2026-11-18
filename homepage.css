@@ -1,0 +1,419 @@
+.collective-home {
+  color: #243b3c;
+  letter-spacing: 0;
+}
+.collective-home .home-container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+}
+.collective-home .home-band {
+  padding: 68px clamp(20px, 6vw, 86px);
+}
+.collective-home .home-eyebrow {
+  margin: 0 0 16px;
+  color: #87600d;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.collective-home h1,
+.collective-home h2,
+.collective-home h3 {
+  letter-spacing: 0;
+  overflow-wrap: normal;
+}
+.collective-home h2 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+.collective-home h3 {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  color: var(--deep-teal);
+}
+.collective-home p {
+  color: #344849;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.collective-home .button {
+  max-width: 100%;
+  padding: 12px 22px;
+  min-height: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+.collective-home a:focus-visible,
+.collective-home summary:focus-visible {
+  outline: 3px solid #a66b00;
+  outline-offset: 5px;
+}
+.collective-hero {
+  position: relative;
+  isolation: isolate;
+  padding: 48px clamp(20px, 6vw, 86px) 60px;
+  background: url("assets/home/fractal-hero.webp") center 44% / cover no-repeat;
+}
+.collective-hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background: rgba(251, 247, 239, 0.91);
+}
+.collective-home .collective-hero h1 {
+  max-width: 1000px;
+  font-size: 3.75rem;
+  line-height: 1.08;
+}
+.collective-home .collective-tagline {
+  max-width: 850px;
+  margin: 24px 0 18px;
+  color: var(--deep-teal);
+  font-size: 1.75rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.collective-home .collective-intro {
+  max-width: 760px;
+  margin: 0;
+  font-size: 1.08rem;
+}
+.collective-hero-actions,
+.home-closing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 28px;
+  margin-top: 28px;
+}
+.collective-home .collective-hero-actions .button {
+  gap: 16px;
+}
+.collective-home .home-inline-link,
+.collective-home .home-work-link {
+  color: var(--deep-teal);
+  font-weight: 800;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+.collective-home .home-section-heading {
+  max-width: 900px;
+  margin-bottom: 36px;
+}
+.collective-home .home-section-subtitle {
+  margin: 16px 0;
+  color: var(--deep-teal);
+  font-size: 1.35rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.collective-home .home-lead {
+  margin-bottom: 0;
+  font-size: 1.08rem;
+}
+.collective-ahs {
+  background: var(--white);
+}
+.home-ahs-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 52px;
+  align-items: start;
+}
+.home-fish-figure {
+  margin: 0;
+}
+.home-fish-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+.home-ahs-copy p:first-child {
+  margin-top: 0;
+}
+.home-ahs-copy p:last-child {
+  margin-bottom: 0;
+}
+.collective-home .home-emphasis {
+  color: var(--deep-teal);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.collective-capacities {
+  position: relative;
+  isolation: isolate;
+  background: url("assets/modules/06-intervention-1440.webp") center / cover no-repeat;
+}
+.collective-capacities::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: rgba(0, 58, 62, 0.94);
+}
+.collective-home .collective-capacities h2,
+.collective-home .collective-capacities h3 {
+  color: var(--white);
+}
+.home-capacities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+.home-capacities-grid article {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.capacity-mark {
+  display: block;
+  margin-bottom: 18px;
+  color: #f0c368;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.collective-home .home-capacities-grid p,
+.collective-home .home-capacities-note {
+  color: #edf4f0;
+}
+.collective-home .home-capacities-note {
+  max-width: 840px;
+  margin: 30px 0 0;
+  font-size: 0.98rem;
+}
+.collective-practice {
+  background: var(--paper);
+}
+.collective-home .home-editorial {
+  max-width: 1080px;
+}
+.home-practice-intro {
+  max-width: 900px;
+}
+.home-practice-applications > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.35fr) minmax(0, 1fr);
+  gap: 36px;
+  padding-block: 26px;
+  border-top: 1px solid var(--line);
+}
+.home-practice-applications h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.home-practice-applications p {
+  margin: 0;
+}
+.home-practice-conclusion {
+  max-width: 900px;
+  margin-bottom: 0;
+}
+.collective-work {
+  background: #eef5f2;
+  scroll-margin-top: 90px;
+}
+#applied-human-systems {
+  scroll-margin-top: 90px;
+}
+.home-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.home-work-card {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+.home-work-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.home-work-image-mindfulness {
+  object-position: 50% 20%;
+}
+.home-work-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 24px;
+}
+.collective-home .home-work-copy h3 {
+  font-size: 1.55rem;
+}
+.collective-home .home-work-benefit {
+  margin-block: 18px 8px;
+  color: var(--deep-teal);
+  font-weight: 700;
+}
+.home-work-copy p {
+  margin-block: 10px;
+}
+.collective-home .home-work-link {
+  display: block;
+  margin-top: auto;
+  padding-top: 22px;
+}
+.collective-closing {
+  background: var(--white);
+}
+.collective-home .collective-closing h2 {
+  max-width: 850px;
+  margin-bottom: 26px;
+}
+.collective-closing p {
+  max-width: 900px;
+}
+.collective-home .home-closing-line {
+  margin-top: 28px;
+  color: var(--deep-teal);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.collective-home .home-signature {
+  margin: 32px 0 0;
+  color: var(--deep-teal);
+  font-weight: 700;
+}
+.home-image-credits {
+  padding: 20px clamp(20px, 6vw, 86px);
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  color: #344849;
+}
+.home-image-credits summary {
+  width: fit-content;
+  padding-block: 10px;
+  color: var(--deep-teal);
+  font-weight: 700;
+  cursor: pointer;
+}
+.collective-home .home-image-credits p {
+  max-width: 1100px;
+  font-size: 0.9rem;
+}
+.home-image-credits a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 1100px) {
+  .home-work-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 900px;
+  }
+  .home-work-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .home-work-image {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .collective-home .home-band {
+    padding: 48px 24px;
+  }
+  .home-ahs-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .home-fish-figure img {
+    max-height: 420px;
+    aspect-ratio: 3 / 2;
+  }
+  .home-capacities-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .home-capacities-grid article {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 18px;
+  }
+  .home-capacities-grid .capacity-mark {
+    grid-row: span 2;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .home-capacities-grid p {
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+  .home-practice-applications > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .home-work-card {
+    display: flex;
+  }
+  .home-work-image {
+    margin-top: 0;
+  }
+}
+@media (max-width: 620px) {
+  .collective-hero {
+    padding: 32px 20px 36px;
+  }
+  .collective-home .collective-hero h1 {
+    font-size: 2.25rem;
+  }
+  .collective-home .collective-tagline {
+    font-size: 1.4rem;
+    margin-top: 18px;
+  }
+  .collective-home .collective-intro {
+    font-size: 1rem;
+  }
+  .collective-home .home-band {
+    padding: 40px 20px;
+  }
+  .collective-home h2 {
+    font-size: 2rem;
+  }
+  .collective-home .home-section-subtitle {
+    font-size: 1.15rem;
+  }
+  .collective-home .home-section-heading {
+    margin-bottom: 26px;
+  }
+  .collective-home .home-work-copy h3 {
+    font-size: 1.4rem;
+  }
+  .collective-hero-actions,
+  .home-closing-actions {
+    gap: 18px;
+  }
+  .collective-home .home-inline-link {
+    display: inline-block;
+    padding-block: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .collective-home *,
+  .collective-home *::before,
+  .collective-home *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

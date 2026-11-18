@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Artune | Learn. Lead. Transform.</title>
+    <title>The Artune Collective | Applied Human Systems</title>
     <meta
       name="description"
-      content="Artune is a personal and professional development portal for awareness, inquiry, mindfulness, systems thinking, and human development."
+      content="The Artune Collective brings Applied Human Systems to mindfulness and personal development, group dynamics and professional learning, and educational consulting and school improvement."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="homepage.css" />
     <script defer src="analytics.js"></script>
+    <script defer src="navigation.js"></script>
   </head>
-  <body>
+  <body class="collective-home">
     <header class="site-header" data-site-header>
       <a class="brand" href="/" aria-label="Artune home">
         <img src="assets/artune-symbol.png" alt="" />
@@ -19,7 +22,14 @@
       </a>
       <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
         <a href="/">Home</a>
-        <a href="/learning/">Offerings</a>
+        <details class="offerings-menu">
+          <summary>Offerings</summary>
+          <div class="offerings-submenu">
+            <a href="/learning/">Personal &amp; Professional Development</a>
+            <a href="/consulting/">Consulting &amp; Coaching</a>
+            <a href="/events/">Events</a>
+          </div>
+        </details>
         <a href="/creators/">Creators</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
@@ -31,145 +41,166 @@
       </button>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="kicker">Learn. Lead. Transform.</p>
-          <h1>Cultivate a deeper awareness of yourself, others, and the world around you.</h1>
-          <p>
-            Artune is a personal and professional development portal that brings
-            together psychology, neuroscience, systems thinking, systems
-            psychodynamics, mindfulness, and human development to help people
-            cultivate greater awareness, deepen understanding, and respond more
-            intentionally to the complexity of human experience.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="/learning/">Explore Our Offerings</a>
-            <a class="button secondary" href="/about/">Learn More About Artune</a>
+    <main class="collective-main">
+      <section class="collective-hero" aria-labelledby="collective-title">
+        <div class="home-container">
+          <p class="home-eyebrow">Learn. Lead. Transform.</p>
+          <h1 id="collective-title">The Artune Collective</h1>
+          <p class="collective-tagline">Learn to notice, make sense of, and respond to what emerges.</p>
+          <p class="collective-intro">We bring together systems thinking, psychology, group relations, mindfulness, and practical professional expertise to help individuals, professionals, and organizations navigate complexity and work more effectively with people.</p>
+          <div class="collective-hero-actions">
+            <a class="button primary" href="#our-work">Explore Our Work <span aria-hidden="true">&darr;</span></a>
+            <a class="home-inline-link" href="#applied-human-systems">Our perspective <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
-        <div class="hero-logo">
-          <img src="assets/artune-stylized.png" alt="Artune. Learn. Lead. Transform." />
-        </div>
       </section>
 
-      <section class="philosophy section-band">
-        <div class="section-label">Core Philosophy</div>
-        <div class="philosophy-content">
-          <div>
-            <h2>Awareness creates choice.</h2>
-            <p>
-              Every moment, we are making meaning. We interpret what we see, fill in
-              what we do not, and respond through patterns shaped by our biology,
-              psychology, relationships, culture, and systems.
-            </p>
-            <p>
-              Artune exists to help people notice those patterns more clearly, so they
-              can respond with greater awareness, intention, and effectiveness.
-            </p>
+      <section class="collective-ahs home-band" id="applied-human-systems" aria-labelledby="ahs-title">
+        <div class="home-container">
+          <header class="home-section-heading">
+            <p class="home-eyebrow">Our perspective</p>
+            <h2 id="ahs-title">Applied Human Systems</h2>
+            <p class="home-section-subtitle">The Dynamics of People Working Together</p>
+            <p class="home-lead">A different way of seeing groups. A more informed way of working with them.</p>
+          </header>
+          <div class="home-ahs-grid">
+            <figure class="home-fish-figure">
+              <img src="assets/modules/01-human-systems-960.webp"
+                srcset="assets/modules/01-human-systems-480.webp 480w, assets/modules/01-human-systems-960.webp 960w, assets/modules/01-human-systems-1440.webp 1440w"
+                sizes="(max-width: 800px) calc(100vw - 40px), 480px"
+                width="960" height="1440" alt="A school of fish forming a coordinated pattern underwater." loading="lazy" decoding="async" />
+            </figure>
+            <div class="home-ahs-copy">
+              <p class="home-emphasis">Our work is grounded in Applied Human Systems&mdash;a perspective that looks beyond individual behavior to the relationships, patterns, and conditions that shape our experiences and interactions.</p>
+              <p>Whenever people come together, there's more happening than what's immediately visible.</p>
+              <p>Individuals bring their experiences, identities, expectations, and motivations. Groups develop patterns of interaction, informal roles, relationships with authority, and ways of responding to uncertainty. All of this takes place within larger organizational, social, and cultural systems.</p>
+              <p>These dynamics influence how people collaborate, make decisions, learn, solve problems, and respond to change&mdash;often without anyone being fully aware of them.</p>
+              <p>Applied Human Systems (AHS) draws on systems thinking, psychology, group relations, and systems psychodynamics to examine these interconnected processes and their implications for working with people.</p>
+              <p>Rather than focusing exclusively on individual personalities or behaviors, AHS invites us to examine the relationships, patterns, and conditions shaping what happens in groups.</p>
+            </div>
           </div>
-          <img class="fractal-panel fractal-panel-learning" src="assets/artune-fractal-learning.png" alt="Colorful branching fractal in teal, gold, coral, and violet" loading="lazy" />
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="kicker">Explore</p>
-          <h2>Different lenses for human experience.</h2>
-          <p>
-            No single discipline can fully explain human experience. Artune brings
-            multiple perspectives into conversation to support richer awareness,
-            better questions, and more thoughtful practice.
-          </p>
-        </div>
-        <div class="domain-grid">
-          <article>
-            <h3>Psychology</h3>
-            <p>Explore how people perceive, think, feel, make meaning, and develop throughout life.</p>
-          </article>
-          <article>
-            <h3>Mindfulness</h3>
-            <p>Cultivate awareness through attention, presence, and reflective practice.</p>
-          </article>
-          <article>
-            <h3>Systems Thinking</h3>
-            <p>Notice patterns, relationships, emergence, and interdependence in human systems.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section course-section">
-        <div class="section-heading">
-          <p class="kicker">Current Learning Opportunity</p>
-          <h2>Group Dynamics for Facilitators</h2>
-          <p>Learn to notice, make sense of, and respond to what emerges in groups.</p>
-        </div>
-        <div class="course-preview">
-          <img class="course-preview-image" src="assets/gdf-banner.png" width="1672" height="941" alt="Group Dynamics for Facilitators course infographic" loading="lazy" />
-          <a class="button primary course-learn-more" href="/learning/group-dynamics-for-facilitators/">Learn More</a>
+      <section class="collective-capacities home-band" aria-labelledby="capacities-title">
+        <div class="home-container">
+          <header class="home-section-heading">
+            <h2 id="capacities-title">Three Capacities That Change How We Work</h2>
+          </header>
+          <div class="home-capacities-grid">
+            <article>
+              <span class="capacity-mark" aria-hidden="true">&#9678;</span>
+              <h3>Notice</h3>
+              <p>Recognize patterns, relationships, and emerging dynamics that might otherwise go unnoticed.</p>
+            </article>
+            <article>
+              <span class="capacity-mark" aria-hidden="true">&#8776;</span>
+              <h3>Make Sense</h3>
+              <p>Explore what those dynamics might tell us, connecting our own experience with what we observe in others and the larger system.</p>
+            </article>
+            <article>
+              <span class="capacity-mark" aria-hidden="true">&#8596;</span>
+              <h3>Respond</h3>
+              <p>Use these insights to make more intentional, authentic, and effective choices about how we participate, intervene, and influence what happens next.</p>
+            </article>
+          </div>
+          <p class="home-capacities-note">AHS doesn't promise certainty or control over human behavior. It offers a richer perspective for navigating the complexity and uncertainty inherent in working with people.</p>
         </div>
       </section>
 
-      <section class="section about">
-        <div class="about-logo">
-          <img src="assets/artune-symbol.png" alt="Artune symbol" />
-        </div>
-        <div>
-          <p class="kicker">About Artune</p>
-          <h2>Artune means awake.</h2>
-          <p>
-            Artune invites learners into a deeper practice of noticing, making
-            sense, and responding with greater intention.
-          </p>
-          <p>
-            It is a place for people who are curious about human experience and
-            committed to a lifelong practice of learning.
-          </p>
-          <a class="text-link" href="/about/">Learn more about Artune</a>
+      <section class="collective-practice home-band" aria-labelledby="practice-title">
+        <div class="home-container home-editorial">
+          <header class="home-section-heading">
+            <p class="home-eyebrow">Awareness in action</p>
+            <h2 id="practice-title">From Theory to Practice</h2>
+            <p class="home-section-subtitle">Awareness of ourselves. Awareness of the systems we're part of.</p>
+          </header>
+          <div class="home-practice-intro">
+            <p>At The Artune Collective, we bring insights from Applied Human Systems, psychology, group relations, education, and mindfulness into practical experiences that support personal, professional, and organizational development.</p>
+            <p>Our work begins with a recognition that we are never separate from the human systems we're part of. Our thoughts, emotions, reactions, and behaviors are shaped by our experiences and relationships, just as our participation influences the people and groups around us.</p>
+          </div>
+          <div class="home-practice-applications">
+            <div><h3>Mindfulness practice</h3><p>Through mindfulness practice, we cultivate greater awareness of our internal experience&mdash;learning to notice thoughts, emotions, physical sensations, and habitual reactions with curiosity rather than immediately responding to them. This creates opportunities to relate differently to our experiences and navigate everyday life with greater presence and intention.</p></div>
+            <div><h3>Group dynamics training</h3><p>Through group dynamics training, we extend our attention to the patterns and processes emerging between people. Our internal experience becomes one source of information, considered alongside what we're observing in others and the larger system.</p></div>
+            <div><h3>Educational &amp; organizational consulting</h3><p>Through educational and organizational consulting, we apply this broader perspective to the practical challenges institutions face. We examine how leadership, relationships, organizational structures, policies, and everyday practices interact to influence outcomes. Combining systems thinking with specialized professional expertise, we help organizations identify underlying challenges and develop sustainable solutions.</p></div>
+          </div>
+          <p class="home-practice-conclusion">These applications are distinct, but they inform one another. Each encourages us to look beyond immediate reactions or presenting problems, consider the larger context, and respond with greater awareness and intention.</p>
         </div>
       </section>
 
-      <section class="section contact">
-        <div>
-          <p class="kicker">Contact</p>
-          <h2>Begin a conversation.</h2>
-          <p>
-            For course questions, organizational learning inquiries, speaking,
-            facilitation, or collaboration, contact Artune at
-            <a href="mailto:admin@artune.net">admin@artune.net</a>.
-          </p>
-          <img class="fractal-panel fractal-panel-contact" src="assets/artune-fractal-learning.png" alt="Interwoven colorful fractal branches and spirals" loading="lazy" />
+      <section class="collective-work home-band" id="our-work" aria-labelledby="work-title">
+        <div class="home-container">
+          <header class="home-section-heading">
+            <p class="home-eyebrow">Three areas of practice</p>
+            <h2 id="work-title">Explore Our Work</h2>
+          </header>
+          <div class="home-work-grid">
+            <article class="home-work-card">
+              <img class="home-work-image home-work-image-mindfulness" src="assets/home/mindfulness-960.webp"
+                srcset="assets/home/mindfulness-480.webp 480w, assets/home/mindfulness-960.webp 960w"
+                sizes="(max-width: 800px) calc(100vw - 40px), (max-width: 1100px) 480px, 400px"
+                width="960" height="640" alt="A woman practicing seated mindfulness at home." loading="lazy" decoding="async" />
+              <div class="home-work-copy">
+                <h3>Mindfulness &amp; Personal Development</h3>
+                <p class="home-work-benefit">Cultivate awareness. Make room for more intentional choices.</p>
+                <p>Our mindfulness offerings combine mindfulness-based practices, movement, reflection, and insights from the science of the mind to help individuals navigate stress, develop greater self-awareness, and bring more presence into everyday life.</p>
+                <p>Through guided practice and practical exercises, participants develop skills they can use in their daily lives.</p>
+                <a class="home-work-link" href="/creators/#shakeh-offerings-title">Explore Mindfulness &amp; Personal Development &rarr;</a>
+              </div>
+            </article>
+            <article class="home-work-card">
+              <img class="home-work-image " src="assets/home/group-learning-960.webp"
+                srcset="assets/home/group-learning-480.webp 480w, assets/home/group-learning-960.webp 960w"
+                sizes="(max-width: 800px) calc(100vw - 40px), (max-width: 1100px) 480px, 400px"
+                width="960" height="640" alt="Professionals listening and discussing their work together around a table." loading="lazy" decoding="async" />
+              <div class="home-work-copy">
+                <h3>Group Dynamics &amp; Professional Learning</h3>
+                <p class="home-work-benefit">Go beyond techniques. Learn to work with the dynamics shaping human groups.</p>
+                <p>Our professional learning programs bring an Applied Human Systems perspective to the practical challenges of working with groups.</p>
+                <p>Participants learn to recognize emerging dynamics, connect their internal experience with external observations, and make more informed, authentic interventions.</p>
+                <p>Designed for facilitators, team coaches, consultants, teachers, trainers, and other professionals whose effectiveness depends on working with people.</p>
+                <a class="home-work-link" href="/learning/group-dynamics-for-facilitators/">Explore Group Dynamics for Facilitators &rarr;</a>
+              </div>
+            </article>
+            <article class="home-work-card">
+              <img class="home-work-image " src="assets/home/school-collaboration-960.webp"
+                srcset="assets/home/school-collaboration-480.webp 480w, assets/home/school-collaboration-960.webp 960w"
+                sizes="(max-width: 800px) calc(100vw - 40px), (max-width: 1100px) 480px, 400px"
+                width="960" height="640" alt="Educators working together on mathematical ideas at a classroom chalkboard." loading="lazy" decoding="async" />
+              <div class="home-work-copy">
+                <h3>Educational Consulting &amp; School Improvement</h3>
+                <p class="home-work-benefit">Thoughtful Systems. Practical Solutions. Stronger Schools.</p>
+                <p>Schools are complex learning communities. Their success depends not only on the quality of instruction, but also on the leadership practices, relationships, organizational structures, and systems that support teaching and learning.</p>
+                <p>We partner with public, private, independent, and charter schools to strengthen educational practices, improve organizational effectiveness, and develop sustainable solutions tailored to each school's needs.</p>
+                <p>Our services include accreditation and continuous improvement, curriculum and instruction, educational leadership, inclusive student support, school culture, responsible AI integration, and strategic school improvement.</p>
+                <p>Rather than introducing isolated initiatives, we help schools examine how their systems work together, identify underlying challenges, and translate insights into meaningful action.</p>
+                <a class="home-work-link" href="/consulting/educational-consulting/">Explore Educational Consulting &amp; School Improvement <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          </div>
         </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" />
-          </label>
-          <label>
-            Reason for Inquiry
-            <select name="reason">
-              <option>Course question</option>
-              <option>Organizational learning inquiry</option>
-              <option>Mindfulness / MBSR</option>
-              <option>Speaking or facilitation</option>
-              <option>Creator / collaborator inquiry</option>
-              <option>General question</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4"></textarea>
-          </label>
-          <button class="button primary" type="submit">Send Inquiry</button>
-        </form>
       </section>
-    </main>
 
-    <footer class="site-footer">
+      <section class="collective-closing home-band" aria-labelledby="closing-title">
+        <div class="home-container home-editorial">
+          <h2 id="closing-title">Meaningful Development Begins with Awareness</h2>
+          <p>Whether we're supporting an individual's mindfulness practice, helping a professional work more effectively with groups, or partnering with a school to strengthen its systems, our approach is grounded in curiosity, thoughtful inquiry, and practical application.</p>
+          <p>Meaningful development rarely comes from simply acquiring more information or adopting another technique.</p>
+          <p>It comes from developing the capacity to notice what is happening, consider what it might mean, and make more intentional choices about what to do next.</p>
+          <p class="home-closing-line">Notice more. Make sense of what emerges. Respond with intention.</p>
+          <div class="home-closing-actions">
+            <a class="button primary" href="https://Artune.freshlearn.com/checkout/Coaching/99">Complimentary Initial Consultation</a>
+            <a class="home-inline-link" href="/contact/">Contact Artune <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <p class="home-signature">The Artune Collective</p>
+        </div>
+      </section>
+      <details class="home-image-credits">
+        <summary>Image credits</summary>
+        <p>Schooling fish: <a href="https://unsplash.com/photos/school-of-fish-swimming-underwater-_w-VVA8PrC0">Jet Kim, Unsplash</a> (<a href="https://unsplash.com/license">Unsplash License</a>). Ripple and fractal artwork: existing Artune artwork.</p>
+        <p>Mindfulness: <a href="https://www.pexels.com/photo/a-woman-doing-meditation-at-home-6767991/">olia danilevich</a>. Group discussion: <a href="https://www.pexels.com/photo/a-group-of-people-sitting-while-discussing-their-work-7691706/">Yan Krukau</a>. Educational collaboration: <a href="https://www.pexels.com/photo/educators-discussing-mathematical-graphs-on-chalkboard-28608146/">Jean-Rene Chazottes</a>. All three photographs used under the <a href="https://www.pexels.com/license/">Pexels License</a>; resized and converted to WebP.</p>
+      </details>
+    </main>  <footer class="site-footer">
       <img src="assets/artune-symbol.png" alt="" />
       <div>
         <strong>Artune</strong>
@@ -178,28 +209,5 @@
         <span>&copy; 2026 Artune. All rights reserved.</span>
       </div>
     </footer>
-    <script>
-      (() => {
-        if (window.artuneMenuReady) return;
-        window.artuneMenuReady = true;
-        const header = document.querySelector("[data-site-header]");
-        const toggle = header?.querySelector(".menu-toggle");
-        const nav = header?.querySelector("#primary-navigation");
-        const closeMenu = () => {
-          header?.classList.remove("is-menu-open");
-          document.body.classList.remove("is-menu-locked");
-          toggle?.setAttribute("aria-expanded", "false");
-        };
-        toggle?.addEventListener("click", () => {
-          const isOpen = header.classList.toggle("is-menu-open");
-          document.body.classList.toggle("is-menu-locked", isOpen);
-          toggle.setAttribute("aria-expanded", String(isOpen));
-        });
-        nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") closeMenu();
-        });
-      })();
-    </script>
-  </body>
+</body>
 </html>

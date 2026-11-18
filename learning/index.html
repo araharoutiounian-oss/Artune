@@ -3,16 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Learning | Artune</title>
+    <title>Personal &amp; Professional Development | Artune</title>
     <meta name="description" content="Artune learning experiences develop awareness in action through courses, reflections, resources, and practices." />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../navigation.css" />
+    <link rel="stylesheet" href="../consulting.css" />
     <script defer src="../analytics.js"></script>
+    <script defer src="../navigation.js"></script>
   </head>
-  <body>
+  <body class="practice-page catalog-page">
     <header class="site-header" data-site-header>
       <a class="brand" href="/" aria-label="Artune home"><img src="../assets/artune-symbol.png" alt="" /><span>Artune</span></a>
       <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
-        <a href="/">Home</a><a href="/learning/">Offerings</a><a href="/creators/">Creators</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+        <a href="/">Home</a><details class="offerings-menu">
+          <summary>Offerings</summary>
+          <div class="offerings-submenu">
+            <a href="/learning/">Personal &amp; Professional Development</a>
+            <a href="/consulting/">Consulting &amp; Coaching</a>
+            <a href="/events/">Events</a>
+          </div>
+        </details><a href="/creators/">Creators</a><a href="/about/">About</a><a href="/contact/">Contact</a>
       </nav>
       <a class="nav-cta" href="https://Artune.freshlearn.com/member">Member Portal</a>
       <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false"><span class="menu-toggle-lines" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
@@ -20,8 +30,8 @@
     <main>
       <section class="page-hero page-hero-split">
         <div>
-          <p class="kicker">Learning</p>
-          <h1>Learning</h1>
+          <p class="kicker">Offerings</p>
+          <h1>Personal &amp; Professional Development</h1>
           <p>Artune learning experiences are designed to help people develop awareness in action through courses, reflections, resources, and practices that bring multiple lenses into conversation.</p>
         </div>
         <img class="fractal-panel fractal-panel-learning" src="../assets/artune-fractal-learning.png" alt="Colorful branching fractal in teal, gold, coral, and violet" />
@@ -43,74 +53,16 @@
           </div>
         </div>
       </section>
-      <section class="section work-with-section">
-        <div class="section-heading">
-          <p class="kicker">Work With Ara</p>
-          <h2>Consultation for facilitation, leadership, and group life.</h2>
-          <p>Bring a real design, question, or situation into focused consultation and strengthen your capacity to work with what emerges in groups.</p>
-          <a class="button primary initial-consultation-button" href="https://Artune.freshlearn.com/checkout/Coaching/99">Complimentary Initial Consultation</a>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <h3 class="service-title">Systems-Informed Design Consultation</h3>
-            <p class="service-price">$595 for a 90-minute consultation</p>
-            <p>Bring your next workshop, retreat, leadership meeting, classroom experience, or facilitation design for an in-depth, 90-minute consultation.</p>
-            <p>Together, we'll examine not only the agenda and activities, but also the group dynamics that are likely to emerge. Using a systems-informed lens, we'll strengthen the design by considering task, authority, role, boundaries, participation, identity and difference, and the conditions that support meaningful learning and engagement.</p>
-            <p>This consultation is ideal for facilitators, consultants, educators, organizational leaders, and anyone designing experiences where people come together to think, learn, collaborate, or make decisions.</p>
-            <div class="service-actions">
-              <p class="consultation-invitation">Let's have a conversation about what you want and need.</p>
-              <a class="button secondary initial-consultation-button" href="https://Artune.freshlearn.com/checkout/Coaching/99">Complimentary Initial Consultation</a>
-              <a class="button primary" href="https://Artune.freshlearn.com/checkout/Coaching/95">Book Design Consultation</a>
-            </div>
-          </article>
-          <article class="service-card">
-            <h3 class="service-title">Individual Coaching & Consultation</h3>
-            <p class="service-price">$295 per hour</p>
-            <p>Sometimes the most valuable learning comes from examining a real situation you're currently navigating.</p>
-            <p>These one-on-one sessions provide personalized support for facilitators, leaders, consultants, educators, and organizational practitioners seeking guidance on complex group situations.</p>
-            <p>Sessions may focus on:</p>
-            <ul class="feature-list">
-              <li>Challenging facilitation situations</li>
-              <li>Group dynamics and intervention planning</li>
-              <li>Leadership and authority</li>
-              <li>Workshop and meeting design</li>
-              <li>Sensemaking after difficult group experiences</li>
-              <li>Applying systems psychodynamics to your own practice</li>
-              <li>Professional development as a facilitator</li>
-            </ul>
-            <p>Whether you're preparing for an important facilitation or reflecting on one that's already happened, these conversations are designed to strengthen your confidence, deepen your awareness, and expand your capacity to work effectively with groups.</p>
-            <div class="service-actions">
-              <p class="consultation-invitation">Let's have a conversation about what you want and need.</p>
-              <a class="button secondary initial-consultation-button" href="https://Artune.freshlearn.com/checkout/Coaching/99">Complimentary Initial Consultation</a>
-              <a class="button primary" href="https://Artune.freshlearn.com/checkout/Coaching/100">Book Individual Coaching</a>
-            </div>
-          </article>
+
+      <section class="practice-section">
+        <div class="practice-container practice-reading">
+          <h2>Mindfulness &amp; Personal Development</h2>
+          <p>Create space to settle your attention and reconnect with the present moment. Sessions may include breath awareness, body scans, and gentle movement, with guidance suited to your experience and comfort.</p>
+          <a class="practice-text-link" href="/creators/#shakeh-offerings-title">Explore Mindfulness with Shakeh <span aria-hidden="true">&rarr;</span></a>
+          <p><a class="practice-text-link" href="/events/">View live gatherings and events</a></p>
         </div>
       </section>
     </main>
     <footer class="site-footer"><img src="../assets/artune-symbol.png" alt="" /><div><strong>Artune</strong><span>Learn. Lead. Transform.</span><a href="mailto:admin@artune.net">admin@artune.net</a><span>&copy; 2026 Artune. All rights reserved.</span></div></footer>
-    <script>
-      (() => {
-        if (window.artuneMenuReady) return;
-        window.artuneMenuReady = true;
-        const header = document.querySelector("[data-site-header]");
-        const toggle = header?.querySelector(".menu-toggle");
-        const nav = header?.querySelector("#primary-navigation");
-        const closeMenu = () => {
-          header?.classList.remove("is-menu-open");
-          document.body.classList.remove("is-menu-locked");
-          toggle?.setAttribute("aria-expanded", "false");
-        };
-        toggle?.addEventListener("click", () => {
-          const isOpen = header.classList.toggle("is-menu-open");
-          document.body.classList.toggle("is-menu-locked", isOpen);
-          toggle.setAttribute("aria-expanded", String(isOpen));
-        });
-        nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") closeMenu();
-        });
-      })();
-    </script>
-  </body>
+</body>
 </html>
