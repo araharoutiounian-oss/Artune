@@ -10,6 +10,7 @@ This is the GitHub-ready version of the Artune website.
 /learning/group-dynamics-for-facilitators/
 /consulting/
 /consulting/educational-consulting/
+/consulting/leadership-and-organizations/
 /events/
 /creators/
 /about/
@@ -38,6 +39,7 @@ course-introduction.css
 navigation.css
 navigation.js
 consulting.css
+leadership.css
 consulting.js
 analytics.js
 script.js

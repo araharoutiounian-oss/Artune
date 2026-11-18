@@ -72,6 +72,7 @@
 .consulting-school-grid, .events-reset .practice-container { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 48px; align-items: center; }
 .consulting-school-grid img, .events-reset img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
 .events-reset { background: #eef4f1; }
+.consulting-leadership { background: #eef4f1; }
 .practice-page .service-title { font-size: 2rem; line-height: 1.2; }
 .catalog-page .page-hero h1 { font-size: 3rem; line-height: 1.15; }
 @media (max-width: 900px) {
