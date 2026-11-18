@@ -78,7 +78,6 @@ artune.net
 
 ## Notes
 
-- The `Member Portal` button links to the FreshLearn login page.
 - The site is structured as a public-facing development and learning portal.
 - Contact email: `admin@artune.net`
 - Offerings has three categories: Personal & Professional Development, Consulting & Coaching, and Events.
